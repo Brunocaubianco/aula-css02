@@ -1,65 +1,73 @@
-/* Reset básico para padronizar os estilos entre navegadores */
+/* Reset geral */
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-/* Variáveis CSS para reutilização de cores e tamanhos */
-:root {
-  --primary: #0057ff;
-  --radius: 6px;
-}
-
-/* Estilos globais para todo o corpo da página */
-body {
-  font-family: Arial, sans-serif;
-  background: #f9f9f9;
-  color: #333;
-  line-height: 1.6;
-}
-
-/* Container principal com largura máxima e centralizado */
-.container {
-  max-width: 800px;
-  margin: 40px auto;
-  padding: 24px;
-  background: #fff;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
-}
-
-/* Cabeçalho com fundo azul e texto branco */
-.header {
-  background-color: var(--primary);
-  color: #fff;
-  padding: 20px;
-  text-align: center;
-}
-
-/* Estilo do título principal */
-.title {
-  margin: 0;
-}
-
-/* Cartão que envolve conteúdo */
-.card {
-  margin-top: 20px;
-}
-
-/* Estilização do botão com cor e borda arredondada */
-.button {
-  background: var(--primary);
-  color: #fff;
-  padding: 10px 20px;
-  border: none;
-  border-radius: var(--radius);
-  cursor: pointer;
-}
-
-/* Responsividade para telas pequenas */
-@media (max-width: 600px) {
-  .container {
-    padding: 12px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
   }
-}
+  
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #eef2f3, #d9e4f5);
+    color: #333;
+    line-height: 1.6;
+    padding: 0 1rem;
+  }
+  
+  /* Cabeçalho elegante */
+  header {
+    background: linear-gradient(to right, #3b5998, #8b9dc3);
+    color: white;
+    padding: 3rem 1rem;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    border-bottom: 5px solid #2d4373;
+  }
+  
+  header h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+  }
+  
+  /* Container centralizado */
+  main {
+    max-width: 900px;
+    margin: 3rem auto;
+    padding: 1rem;
+  }
+  
+  /* Cartão com visual moderno */
+  section {
+    background-color: white;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    padding: 2rem;
+    margin-bottom: 2rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Título das seções */
+  section h2 {
+    font-size: 1.8rem;
+    color: #3b5998;
+    margin-bottom: 1rem;
+    font-style: italic;
+  }
+  
+  /* Texto */
+  section p {
+    font-size: 1.15rem;
+    color: #444;
+  }
+  
+  /* Negrito destacado */
+  b {
+    color: #111;
+    font-weight: 600;
+  }
+  
